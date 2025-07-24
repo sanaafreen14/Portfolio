@@ -28,6 +28,11 @@ body {
   color: #0d47a1;
   margin-bottom: 1.5rem;
 }
+#about{
+  padding: 200px 0;
+  
+
+}
 
 hr.dotted {
   border-top: 3px dotted lightgray;
@@ -57,4 +62,86 @@ hr.dotted {
 
 footer small {
   color: #555;
+}
+
+.section-offset {
+  padding-top: 90px; /* Adjust this value to match your navbar height */
+}
+
+.animate-fade-in {
+  animation: fadeIn 1.2s ease;
+}
+.animate-slide-up {
+  animation: slideUp 1.2s ease; 
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+/* Skills Section Enhancements */
+.skills .skill-card {
+  background: linear-gradient(135deg, #e0e7ff 60%, #f8fafc 100%);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(13, 71, 161, 0.08);
+  padding: 2rem 1rem;
+  text-align: center;
+  transition: transform 0.3s cubic-bezier(.4,2,.3,1), box-shadow 0.3s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 1.2s ease;
+}
+
+.skills .skill-card:hover {
+  transform: translateY(-10px) scale(1.04);
+  box-shadow: 0 8px 24px rgba(13, 71, 161, 0.15);
+  background: linear-gradient(135deg, #f8fafc 60%, #e0e7ff 100%);
+}
+
+.skills .skill-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #6366f1; /* Indigo */
+  transition: color 0.3s;
+}
+
+.skills .skill-card:hover .skill-icon {
+  color: #0ea5e9; /* Blue */
+}
+
+.skills .skill-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0d47a1;
+  margin-bottom: 0.5rem;
+}
+
+.skills .skill-desc {
+  font-size: 1rem;
+  color: #555;
+  opacity: 0.85;
+}
+
+/* Responsive grid for skills */
+.skills .row {
+  row-gap: 2rem;
+}
+
+/* Example for skills section */
+#skills {
+  background-color: #f8f9fa;
+  padding: 5rem 0;
+}
+
+#skills .section-title {
+  margin-bottom: 4rem;
+}
+
+#skills .skill-card {
+  margin-bottom: 2rem;
 }
