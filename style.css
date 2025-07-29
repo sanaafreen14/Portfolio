@@ -29,7 +29,7 @@ body {
   margin-bottom: 1.5rem;
 }
 #about{
-  padding: 200px 0;
+  /* padding: 200px 0; */
   
 
 }
@@ -65,7 +65,7 @@ footer small {
 }
 
 .section-offset {
-  padding-top: 90px; /* Adjust this value to match your navbar height */
+  padding: 150px 0px; /* Adjust this value to match your navbar height */
 }
 
 .animate-fade-in {
@@ -135,7 +135,7 @@ footer small {
 /* Example for skills section */
 #skills {
   background-color: #f8f9fa;
-  padding: 5rem 0;
+  /* padding: 5rem 0; */
 }
 
 #skills .section-title {
@@ -145,3 +145,15 @@ footer small {
 #skills .skill-card {
   margin-bottom: 2rem;
 }
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  background-color: #ffffff;
+  border-left: 4px solid #4f91ff;
+  border-radius: 0.5rem;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background-color: #f0f8ff;
+}
+
