@@ -120,13 +120,9 @@
     <hr class="dotted" />
 
     <!-- About Section -->
-    <section
-      id="about"
-      class="section-offset"
-      style="background-color: #f0f4ff"
-    >
+    <section id="about" class="section-offset" style="background: #f4f4fb">
       <div class="container">
-        <h2 class="section-title text-center mt-8 mb-16">About Me</h2>
+        <h2 class="section-title text-center mb-16 mt-16">About Me</h2>
         <p class="text-center w-75 mx-auto">
           💡 I’m a passionate and energetic Computer Science student with
           practical skills in frontend development and real-world programming.
@@ -150,7 +146,7 @@
     <section
       id="Education"
       class="section-offset"
-      style="padding-bottom: 150px; background-color: #e9f5ff"
+      style="padding-bottom: 150px; background-color: #f5faff"
     >
       <div class="container text-center">
         <h2 class="section-title mb-4 mt-4">Education</h2>
@@ -164,7 +160,7 @@
                 Bachelor of Engineering in Computer Science and Engineering
                 (Pursuing)
               </p>
-              <small class="text-muted">Dec 2022 - Mar 2026</small>
+              <span class="edu-date">Dec 2022 - Mar 2026</span>
             </div>
             <div class="card shadow-sm p-3">
               <h5 class="fw-bold">Justice Shivaraj Patil PU College</h5>
@@ -179,42 +175,59 @@
     <section
       id="skills"
       class="skills section-offset"
-      style="background-color: #f8f9fa"
+      style="background-color: #f9fafb"
     >
       <div class="container">
         <h2 class="section-title text-center mb-4">Skills</h2>
         <div class="row row-cols-2 row-cols-md-4 g-4 justify-content-center">
           <div class="col text-center">
-            <i class="bi bi-filetype-html fs-2 text-primary"></i>
-            <div class="skill-box mt-2">HTML, CSS, Bootstrap</div>
+            <div class="p-3 skill-card">
+              <i class="bi bi-filetype-html fs-2 text-primary"></i>
+              <div class="skill-box mt-2">HTML, CSS, Bootstrap</div>
+            </div>
+          </div>
+
+          <div class="col text-center">
+            <div class="skill-card p-3">
+              <i class="bi bi-filetype-js fs-2 text-warning"></i>
+              <div class="skill-box mt-2">JavaScript, React.js + Vite</div>
+            </div>
           </div>
           <div class="col text-center">
-            <i class="bi bi-filetype-js fs-2 text-warning"></i>
-            <div class="skill-box mt-2">JavaScript, React.js + Vite</div>
+            <div class="skill-card p-3">
+              <i class="bi bi-filetype-java fs-2 text-danger"></i>
+              <div class="skill-box mt-2">Java, C</div>
+            </div>
           </div>
           <div class="col text-center">
-            <i class="bi bi-filetype-java fs-2 text-danger"></i>
-            <div class="skill-box mt-2">Java, C</div>
+            <div class="skill-card p-3">
+              <i class="bi bi-filetype-py fs-2 text-info"></i>
+              <div class="skill-box mt-2">Python (Basics)</div>
+            </div>
           </div>
           <div class="col text-center">
-            <i class="bi bi-filetype-py fs-2 text-info"></i>
-            <div class="skill-box mt-2">Python (Basics)</div>
+            <div class="skill-card p-3">
+              <i class="bi bi-git fs-2 text-dark"></i>
+              <div class="skill-box mt-2">Git & GitHub</div>
+            </div>
           </div>
           <div class="col text-center">
-            <i class="bi bi-git fs-2 text-dark"></i>
-            <div class="skill-box mt-2">Git & GitHub</div>
+            <div class="skill-card p-3">
+              <i class="bi bi-cpu fs-2 text-success"></i>
+              <div class="skill-box mt-2">IoT & Sensors</div>
+            </div>
           </div>
           <div class="col text-center">
-            <i class="bi bi-cpu fs-2 text-success"></i>
-            <div class="skill-box mt-2">IoT & Sensors</div>
+            <div class="skill-card p-3">
+              <i class="bi bi-palette fs-2 text-secondary"></i>
+              <div class="skill-box mt-2">Web UI/UX (Basics)</div>
+            </div>
           </div>
           <div class="col text-center">
-            <i class="bi bi-palette fs-2 text-secondary"></i>
-            <div class="skill-box mt-2">Web UI/UX (Basics)</div>
-          </div>
-          <div class="col text-center">
-            <i class="bi bi-people fs-2 text-primary"></i>
-            <div class="skill-box mt-2">Problem Solving & Collaboration</div>
+            <div class="skill-card p-3">
+              <i class="bi bi-people fs-2 text-primary"></i>
+              <div class="skill-box mt-2">Problem Solving & Collaboration</div>
+            </div>
           </div>
         </div>
       </div>
@@ -226,7 +239,7 @@
     <section
       id="projects"
       class="section-offset pb-5"
-      style="background-color: #f6f0fa"
+      style="background-color: #f4f4fb"
     >
       <div class="container">
         <h2 class="section-title text-center mb-4">Projects</h2>
@@ -236,7 +249,6 @@
           <!-- Portfolio Website -->
           <div class="col">
             <div class="project-card p-4 shadow rounded h-100">
-              f
               <h5 class="fw-bold">Portfolio Website</h5>
               <span class="badge bg-success mb-2">React.js</span>
               <span class="badge bg-info mb-2">Tailwind CSS</span>
@@ -344,7 +356,7 @@
     <!-- Certifications Section -->
     <section
       id="Certifications"
-      class="section-offset p-300px"
+      class="section-offset"
       style="background-color: #f5faff"
     >
       <div class="container">
@@ -352,18 +364,14 @@
         <div class="row justify-content-center">
           <div class="col-md-8">
             <div class="card shadow-sm mb-3 p-3">
-              <h6 class="fw-bold mb-1">Frontend Development - Coursera</h6>
-              <small class="text-muted">Issued: Jan 2024</small>
-            </div>
-            <div class="card shadow-sm mb-3 p-3">
               <h6 class="fw-bold mb-1">
-                Python Programming Basics - Infosys Springboard
+                BUILD WITH AI Hackathon – Google Developer Groups
               </h6>
-              <small class="text-muted">Issued: Nov 2023</small>
+              <small class="text-muted">Certification of Participation</small>
             </div>
             <div class="card shadow-sm mb-3 p-3">
-              <h6 class="fw-bold mb-1">React Essentials - Great Learning</h6>
-              <small class="text-muted">Issued: Aug 2023</small>
+              <h6 class="fw-bold mb-1">Samsung Innovation Campus</h6>
+              <small class="text-muted">Certified IoT Member of Super 35</small>
             </div>
           </div>
         </div>
