@@ -9,7 +9,7 @@
       content="Portfolio of Sana Afreen – aspiring software developer and IoT enthusiast."
     />
     <meta name="author" content="Sana Afreen" />
-
+    <link rel="icon" href="favicon (1).ico" type="image/x-icon" />
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;600&display=swap"
@@ -38,6 +38,9 @@
     >
       <div class="container">
         <a class="navbar-brand" href="#">Sana Afreen</a>
+        <a href="/" class="logo-link">
+          <img src="paw.jpg" alt="Logo" class="logo-img" />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -66,6 +69,17 @@
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
+
+            <li class="nav-item">
+              <a
+                href="https://drive.google.com/file/d/1JtxGXvIw-GR6nNdTifFS1_PAFiD_sa4M/view?usp=drivesdk"
+                target="blank"
+                rel="noopener noreferrer"
+                id="Resume"
+              >
+                Resume
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -85,8 +99,7 @@
         />
         <h1 class="display-4 fw-bold">Hi, I'm Sana Afreen</h1>
         <p class="lead mb-4 text-secondary">
-          Passionate Software Developer | React Enthusiast | IoT Explorer |
-          UI/UX Learner
+          Passionate Software Developer | UI/UX Developer | IoT Explorer |
         </p>
         <div class="d-flex justify-content-center gap-3 mb-3">
           <a
@@ -124,14 +137,20 @@
       <div class="container">
         <h2 class="section-title text-center mb-16 mt-16">About Me</h2>
         <p class="text-center w-75 mx-auto">
-          💡 I’m a passionate and energetic Computer Science student with
-          practical skills in frontend development and real-world programming.
-          🚀 I love turning ideas into meaningful digital solutions using
-          technologies like HTML, CSS, JavaScript, React, and more. I constantly
-          build, experiment, and refine my code to be both clean and
-          user-friendly. 🤝 Whether it’s developing smart systems or
-          collaborating on team projects, I strive to grow, create, and make an
-          impact every step of the way.
+          I am a passionate and driven Computer Science student with hands-on
+          experience in frontend development and building real-world
+          applications. I enjoy transforming ideas into intuitive and impactful
+          digital solutions using technologies like HTML, CSS, JavaScript,
+          React, and more..<br />
+          <br />
+          I focus on writing clean, maintainable code and building user-friendly
+          interfaces. Always eager to learn and grow, I thrive in both
+          individual and collaborative projects, aiming to create software that
+          truly makes a difference.<br />
+          <br />
+          Beyond coding, I have a deep appreciation for creativity and design —
+          crafting beautiful, engaging interfaces is not just a skill, but a
+          genuine passion of mine.<br />
         </p>
         <div class="text-center mt-3">
           <a href="#projects" class="btn btn-outline-primary btn-lg"
@@ -399,6 +418,7 @@
               <div class="mb-3">
                 <input
                   type="text"
+                  name="from_name"
                   class="form-control"
                   placeholder="Your Name"
                   required
@@ -415,17 +435,18 @@
               </div>
               <div class="mb-3">
                 <textarea
+                  name="message"
                   class="form-control"
                   rows="4"
                   placeholder="Your Message"
                   required
                 ></textarea>
               </div>
-              <script></script>
               <button type="submit" class="btn btn-primary w-100">
                 Send Message
               </button>
             </form>
+
             <div class="mt-4 text-center animate-fade-in">
               <a
                 href="mailto:ssafreen05@gmail.com"

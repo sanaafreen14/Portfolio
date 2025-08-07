@@ -4,9 +4,42 @@ body {
   color: #212529;
 }
 
+.navbar {
+z-index: 1000;
+}
+
 .navbar-brand {
   font-weight: bold;
   font-size: 1.3rem;
+}
+.logo-link {
+  display: flex;
+  align-items:left;
+  text-decoration: none;
+}
+.logo-img {
+  position: absolute;      /* or use flex/grid depending on layout */
+  top: 10px;
+  left: 60px;
+  
+  width: 50px;             /* adjust size */
+  height: 50px;
+  border-radius: 50%;      /* makes it circular = cute */
+  object-fit: cover;       /* makes sure image doesn't stretch */
+}
+.nav-item:hover{
+ transform: translateY(-2px);
+
+}
+
+#Resume{
+  display:inline-block;
+  padding: 8px 16px;
+  color: black;
+  background-color: #D4F6FF;
+ border-radius : 8px;
+  text-decoration: none;;
+  margin-left: 10px;
 }
 
 .hero {
@@ -35,6 +68,7 @@ body {
 
 
 }
+
 
 hr.dotted {
   border-top: 3px dotted lightgray;
@@ -67,7 +101,9 @@ footer small {
 }
 
 .section-offset {
-  padding: 150px 0px; /* Adjust this value to match your navbar height */
+  padding: 140px 0px; /* Adjust this value to match your navbar height */
+  text-align: center;
+  text-size-adjust: 50%;
 }
 
 .animate-fade-in {
@@ -110,6 +146,7 @@ footer small {
   margin-bottom: 1rem;
   color: #6366f1; /* Indigo */
   transition: color 0.3s;
+  
 }
 
 .skills .skill-card:hover .skill-icon {
